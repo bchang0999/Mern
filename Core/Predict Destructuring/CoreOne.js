@@ -1,10 +1,10 @@
-// /////Queestion 1
+/////Queestion 1
 // const cars = ['Tesla', 'Mercedes', 'Honda']
 // const [ randomCar ] = cars
 // const [ ,otherRandomCar ] = cars
 // //Predict the output
-// console.log(randomCar)  ////'Tesla', 'Mercedes', 'Honda'
-// console.log(otherRandomCar) ////'Tesla', 'Mercedes'
+// console.log(randomCar)  ////'Tesla'
+// console.log(otherRandomCar) ////'Mercedes'
 
 
 // /////Question 2
@@ -42,7 +42,7 @@
 // console.log(first == third); //2,2 true
 
 
-// ///Question 5
+///Question 5
 // const lastTest = {
 //     key: 'value',
 //     secondKey: [1, 5, 1, 8, 3, 3]
@@ -51,7 +51,7 @@
 // const { secondKey } = lastTest;
 // const [ ,willThisWork] = secondKey;
 // //Predict the output 
-//T
+
 // console.log(key);   ///Value
 // console.log(secondKey); //[1,5,1,8,3,3]
 // console.log(secondKey[0]);//1
