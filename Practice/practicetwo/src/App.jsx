@@ -8,7 +8,7 @@ function App() {
       <PersonCard 
       firstname= {"Brandon"}
       lastname = {"Chang"}
-      age = {"25"}
+      age = {25}
       hair = {"black"}
 
 
@@ -16,13 +16,13 @@ function App() {
       <PersonCard 
       firstname= {"David"}
       lastname = {"Pierce"}
-      age = {"25"}
+      age = {25}
       hair = {"brown"}
       />
       <PersonCard 
       firstname= {"Sean"}
       lastname = {"McNeil"}
-      age = {"25"}
+      age = {25}
       hair = {"brown"}
       />
     </div>
