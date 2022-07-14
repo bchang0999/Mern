@@ -16,13 +16,13 @@ const Form = (props) => {
         
     }
     const TextValid = input => {
-        if(input.length < 2 ){
+        if(input.length < 2 && input.length >= 1){
             return false;
         }
         return true;
     }
     const EmailValid = input => {
-        if(input.length < 5 ){
+        if(input.length < 5 && input.length >= 1){
             return false;
         }
         return true;

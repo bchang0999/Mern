@@ -1,0 +1,11 @@
+.app {
+  align-items: center;
+  background-color: gray;
+}
+
+.divtwo{
+  display: flex;
+  gap: 20px;
+
+}
+

@@ -1,0 +1,17 @@
+.Main{
+    background-color: orangered;
+    height: 400px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+}
+.bottom{
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
