@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ListItem from './ListItem';
 
 export default function Main(props) {
-    const [text, setText] = useState({});
+    const [text, setText] = useState("");
     const submitHandler = (e) => {
         e.preventDefault(); if (text < 1){
             return;
