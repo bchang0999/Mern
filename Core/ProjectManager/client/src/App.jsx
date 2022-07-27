@@ -1,10 +1,8 @@
-import logo from './logo.svg';
-import ProductForm from './components/ProductForm';
 import './App.css';
 import Main from './views/Main';
 import { Routes, Route } from 'react-router-dom';
-import ProductList from './components/ProductList';
-import ProductOne from './components/ProductOne';
+import ProductOne from './views/ProductOne'
+import Update from './views/Update'
 
 
 function App() {
@@ -13,6 +11,7 @@ function App() {
       <Routes>
         <Route element={<Main />} path="/" />
         <Route element={<ProductOne/>} path="/products/viewone/:id"  />
+        <Route element={<Update />} path="/products/:id/update" />
       </Routes>
     </div>
   );

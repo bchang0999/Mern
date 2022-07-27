@@ -3,9 +3,12 @@ import ProductForm from '../components/ProductForm';
 import ProductList from '../components/ProductList';
 import axios from 'axios';
 
+
 const Main = (props) => {
     const [product, setProduct] = useState([]);
     const [loaded, setLoaded] = useState(false);
+    const [update, setUpdate] = useState(false);
+
 
     useEffect(() => {
         axios.get('http://localhost:8000/api/products')
@@ -14,12 +17,17 @@ const Main = (props) => {
                 setLoaded(true);
             })
             .catch(err => console.error(err));
-    }, []);
+    }, [product, update]);
+
+const change = () => {
+    setUpdate (!update)
+}
+
 
     return (
         <div>
-            <ProductForm />
-            {loaded && <ProductList product={product} />}
+            <ProductForm update={change} />
+            {loaded && <ProductList product={product}/>}
         </div>
     )
 }
